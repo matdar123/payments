@@ -7,7 +7,6 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Data
-@AllArgsConstructor
 public abstract class Employee {
 
     private String name;
@@ -22,4 +21,6 @@ public abstract class Employee {
     public abstract boolean isPaymentDay (LocalDate day);
 
     public abstract BigDecimal calculatePayment (LocalDate day);
+
+    public abstract LocalDate findFirstDayOfWorkingPeriod (LocalDate peymentDate);
 }
