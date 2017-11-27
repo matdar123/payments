@@ -67,9 +67,6 @@ public class HourlyEmployee extends Employee {
 
     public LocalDate findFirstDayOfWorkingPeriod(LocalDate paymentDate) {
         return paymentDate.minusDays(4);
-
-
-
     }
 
     private List<WorkingDay> findWorkingDays(LocalDate firstDay, LocalDate lastDay) {
